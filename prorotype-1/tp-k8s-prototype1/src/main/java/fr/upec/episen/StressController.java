@@ -15,7 +15,7 @@ public class StressController {
         long end = System.currentTimeMillis() + (duration * 1000L);
         
         while (System.currentTimeMillis() < end) {
-            Math.sqrt(Math.random()); // Simulation de charge
+            Math.sqrt(Math.random());
         }
         
         return ResponseEntity.ok("Calcul terminé sur " + System.getenv("HOSTNAME"));
